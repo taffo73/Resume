@@ -17,14 +17,14 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title: Online Resume
-authorName: Ankanna
-email: bugboy@gmx.com
+authorName: Gary
+email: taffgal@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
-  This is onlin Resume for the developers.
+  This is my online Resume.
 baseurl: / # the subpath of your site, e.g. /blog
-url: "http://resume.blackode.in" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: tweetblackode
-github_username:  blackode
+url: "http://resume.garyllewellyn.us" # the base hostname & protocol for your site, e.g. http://example.com
+twitter_username: wedi_blino
+github_username:  taffo73
 
 # Build settings
 markdown: kramdown
