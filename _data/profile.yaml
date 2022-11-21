@@ -14,7 +14,11 @@ description: > # This means ignore new line until
   Key Strengths - Excel at interfacing with customers, engineers, and management. Talent for quickly learning new information, procedures, and technologies. Exceptionally organized and able to multitask. 
 
 social:
-  accounts: twitter,linkedin,github # add new account here and link in following (facebook,youtube,medium,behance)
+  accounts: facebook,youtube,medium,behance,twitter,linkedin,github # add new account here and link in following
   linkedin: linkedin.com/in/gary-llewellyn
   twitter: https://twitter.com/wedi_blino
   github: https://github.com/taffo73
+  facebook:
+  youtube:
+  medium:
+  behance:
