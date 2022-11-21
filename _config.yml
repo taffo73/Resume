@@ -21,8 +21,8 @@ authorName: Gary
 email: taffgal@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
   This is my online Resume.
-baseurl: /Resume2 # the subpath of your site, e.g. /blog
-url: "https://taffo73.github.io/" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: / # the subpath of your site, e.g. /blog
+url: "https://resume.garyllewellyn.us/" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: wedi_blino
 github_username:  taffo73
 
