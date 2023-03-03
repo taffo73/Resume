@@ -8,6 +8,7 @@ gem 'webrick'
 gem 'liquid'
 gem 'jekyll-include-cache'
 gem 'jekyll-paginate'
+gem 'faraday-retry', '~> 2.1'
 gem 'github-pages', group: :jekyll_plugins
 group :jekyll_plugins do
     gem 'jekyll-algolia', '~> 1.0'
