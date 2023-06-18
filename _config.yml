@@ -18,7 +18,7 @@
 # in the templates via {{ site.myvariable }}.
 title: Online Resume
 authorName: Gary
-email: taffgal@gmail.com
+email: gary@garyllewellyn.us
 description: > # this means to ignore newlines until "baseurl:"
   This is my online Resume.
 baseurl: / # the subpath of your site, e.g. /blog
