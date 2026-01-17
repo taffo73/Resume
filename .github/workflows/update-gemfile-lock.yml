@@ -1,0 +1,34 @@
+name: Update Gemfile.lock (github-pages)
+
+on:
+  workflow_dispatch:
+
+jobs:
+  update-lock:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup Ruby 3.1.7
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.1.7'
+          bundler-cache: true
+
+      - name: Install dependencies and update lock
+        run: |
+          gem install bundler
+          bundle config set path vendor/bundle
+          bundle update github-pages
+          bundle install
+
+      - name: Commit Gemfile.lock
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add Gemfile.lock
+          git commit -m "CI: update Gemfile.lock for github-pages" || echo "No changes to commit"
+          git push origin HEAD:main
