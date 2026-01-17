@@ -1,0 +1,33 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    github-pages (232)
+      jekyll (= 3.10.0)
+      minima (= 2.5.1)
+      jekyll-feed (>= 0)
+      jekyll-sitemap (>= 0)
+      jekyll-paginate (>= 0)
+      jekyll-gist (>= 0)
+      jekyll-json-feed (~> 1.0)
+    jekyll (3.10.0)
+      kramdown (~> 1.17)
+      liquid (~> 4.0)
+      minima (= 2.5.1)
+    minima (2.5.1)
+      jekyll (~> 3.0)
+    jekyll-feed (0.13.0)
+    jekyll-sitemap (1.4.0)
+    jekyll-paginate (1.1.0)
+    jekyll-gist (1.5.0)
+    jekyll-json-feed (1.1.0)
+    kramdown (2.0.0)
+    liquid (4.0.3)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  github-pages!
+
+BUNDLED WITH
+  2.2.21
