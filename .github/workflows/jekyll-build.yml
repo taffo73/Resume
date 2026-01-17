@@ -1,0 +1,29 @@
+name: Jekyll build
+
+on:
+  push:
+    branches: [ main, master ]
+  pull_request:
+    branches: [ main, master ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '2.7'
+          bundler-cache: true
+
+      - name: Install dependencies (exclude GitHub Pages group to avoid conflicts)
+        run: |
+          bundle config set path vendor/bundle
+          bundle install --jobs 4 --retry 3 --without jekyll_plugins
+
+      - name: Build site
+        run: bundle exec jekyll build --trace
